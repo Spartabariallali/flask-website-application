@@ -12,6 +12,9 @@
       </form>
       {% if error %}
         <p class="error"><strong>Error:</strong> {{ error }}
+            <form action="#" method="POST">
+                <p><input type="button" value = "Cancel" onclick="javascript:window.location='http://127.0.0.1:5000/login';"></p>
+              </form>
       {% endif %}
     </div>
 {% endblock %}

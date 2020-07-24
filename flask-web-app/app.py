@@ -1,5 +1,5 @@
-from flask import Flask, render_template, url_for, request,redirect
 from flask_sqlalchemy import SQLAlchemy
+from flask import Flask,render_template,url_for,request,session,logging,redirect,flash
 
 
 app = Flask(__name__)
@@ -31,7 +31,7 @@ def login_error():
 @app.route("/about")
 
 def about():
-    return render_template("about.html")
+    return render_template("about_page.html")
 
 if __name__=="__main__":
     app.run(debug=True)
